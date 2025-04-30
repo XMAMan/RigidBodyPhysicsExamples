@@ -16,7 +16,7 @@ This usecase are shown here:
 
 ![Demo.gif](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/Demo.gif)
 
-To use this NuGet-Package, you need the leveleditor where you define your physicmodels from your objects. This editor can be found here: [Leveleditor.exe](https://github.com/XMAMan/RigidBodyPhysicsExamples/tree/main/Leveleditor)
+To use this NuGet-Package, you need the leveleditor where you define your physicmodels from your objects. This editor can be found here: [Leveleditor.exe](https://github.com/XMAMan/RigidBodyPhysicsExamples/tree/master/Leveleditor)
 
 This editor is needet for creating *.txt-files (content is a json-string), which can be used by the XMAMan.PhysicEngine-NuGet-Package for simulating the movement from 2D-solid-objects. 
 
@@ -24,7 +24,7 @@ This editor is needet for creating *.txt-files (content is a json-string), which
 
 ## Step 1.1 - Define the levelfile "StickPlant.txt"
 
-In this project we want to simulate a stick which is able to move. To do this we need at first a description of the stick and its environment. This description is created by the [Leveleditor.exe](https://github.com/XMAMan/RigidBodyPhysicsExamples/tree/main/Leveleditor)
+In this project we want to simulate a stick which is able to move. To do this we need at first a description of the stick and its environment. This description is created by the [Leveleditor.exe](https://github.com/XMAMan/RigidBodyPhysicsExamples/tree/master/Leveleditor)
 
 So start the leveleditor and click on "Physic Item" (1) to open the editor, where you can define a single physic-object.
 
@@ -353,7 +353,7 @@ If you don't want to use the camera tracker then select again the strick-object 
 
 ## Step 2.1 - Define the levelfile "Gripper.txt"
 
-This project shows how to simulate a gripper where WPF is used for graphic output. We need at first the definition of the physic model by using the [Leveleditor.exe](https://github.com/XMAMan/RigidBodyPhysicsExamples/tree/main/Leveleditor)
+This project shows how to simulate a gripper where WPF is used for graphic output. We need at first the definition of the physic model by using the [Leveleditor.exe](https://github.com/XMAMan/RigidBodyPhysicsExamples/tree/master/Leveleditor)
 
 Click on "Physic Item" (1) and then on "Add Rectangle" (2) and define the first rectangle (3), which is the rail from our gripper. Add a second rectangle (4) which is the 
 suspension for the gripper. We now want to connect the two rectangles. The suspension-rectangle (4) should only move left and right but not falling down because the
