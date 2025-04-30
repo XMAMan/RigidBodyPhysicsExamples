@@ -14,7 +14,7 @@ This usecase are shown here:
 	* shows how to use multipe animations for a single object
 	* shows how to use WPF for graphic output
 
-![Demo.gif](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/Demo.gif)
+![Demo.gif](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/Demo.gif)
 
 To use this NuGet-Package, you need the leveleditor where you define your physicmodels from your objects. This editor can be found here: [Leveleditor.exe](https://github.com/XMAMan/RigidBodyPhysicsExamples/tree/main/Leveleditor)
 
@@ -28,11 +28,11 @@ In this project we want to simulate a stick which is able to move. To do this we
 
 So start the leveleditor and click on "Physic Item" (1) to open the editor, where you can define a single physic-object.
 
-![defineStick0.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick0.png)
+![defineStick0.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick0.png)
 
 In our case we want to define a stick, which is able to move. To do so, click on "Add Rectangle" (2) and then left-click in the white area and move the mouse and left click again to define the first rectangle.
 
-![defineStick1.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick1.png)
+![defineStick1.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick1.png)
 
 After the creation of the first rectangle we want to copy this and move the copy only in X-direction. To do so click on "Clone Shape" (3) and after that left click on the rectangle (4). Hold the shift-key
 and move the mouse in right direction. This will create a second rectangle which you can place beside the first rectangle. Repeat this cloning-step for the other rectangles so we have 5 rectangles in row.
@@ -42,12 +42,12 @@ click on the second rectangle (3). Hold now the shift-key which will show the bl
 from the left side from rectangle2 (5). This will bind the points (4) and (5) together. Repeat this step for all other rectangles to bind all segments together. If you are done 
 then your physic model should look like the this (6).
 
-![defineStick2.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick2.png)
+![defineStick2.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick2.png)
 
 The next step is to define the moving range from the revolute joints. Click on "Limit Joint" (1) and then on the first revolute joint. You can now move the min- and max-limit-arm (2) and (3)
 by holding the left mouse down and move it. The yellow circle segment shows the allowed range from the right green lever arm with index 2. 
 
-![defineStick3.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick3.png)
+![defineStick3.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick3.png)
 
 Click now on "Edit Properties" (4) on the menue bar and then hold the shift-key and left-click on the first revolute joint. You can now see the lower (5) and upper (6) angle
 from the joint. If you want to use for all joints the same moving-range then use for all joints by example 20 degree for the lower angle and 340 degree for the upper angle.
@@ -55,24 +55,24 @@ Use the Edit-Properties-function to set for all joints the same limit-values.
 
 We now want to control all revolute-joints so that the stick is able to move. To do so click on "Add Animation" (1) on the left top side and then on "AnimaitonEditor" (2).
 
-![defineStick4.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick4.png)
+![defineStick4.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick4.png)
 
 In the next window click on "Select which RigidBodys should be fix" (1) and then on the rectangle in the middle (2). This step is needed otherwise the stick will float around 
 durring the definition of the animation-step. 
 
-![defineStick5.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick5.png)
+![defineStick5.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick5.png)
 
 Right-Click now on the yellow area on the left top corner (1) to create a new key-frame. Move the created key-frame to the left side (2) by holding the left mouse. Create a 
 second key frame by right-clicking again in the yellow area (1) and then move the frame to the right side (3). The key-frame with the red border is the currently selected
 frame. In this image is the left key frame (2) selected and for this frame you see on the right side the values from alle joints (4). Move all sliders a little bit to the 
 left so that the stick looks like in in image.
 
-![defineStick6.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick6.png)
+![defineStick6.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick6.png)
 
 Select now the second key frame on the right side by left-clicking on the rectangle (1) and then move the sliders a little bit to the right side (2) so that the stick looks 
 like in the image:
 
-![defineStick7.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick7.png)
+![defineStick7.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick7.png)
 
 Left-click in the yellow area (3) to deselect all key-frames. Select in the combobox (4) that you want to use a manually animation und then hold the forward/backward-buttons (5)
 the see the animation. The red circle (6) shows the animation-position. 
@@ -82,29 +82,29 @@ This animation now defines the movement from the stick. Click now in the "Add Te
 To open this tab click on (1) and then on the first rectangle (2) so select it. We want to use a texture for this rectangle so click on the "..."-Button (3) and
 select the "Circles.png"-image from the data-folder from this project here. Set "MakeFirstPixelTransparent" to false (4) to show the hole image. 
 
-![defineStick8.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick8.png)
+![defineStick8.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick8.png)
 
 Do this for all rectangles. If you are done click on "Go Back"-Button (5).
 
-![defineStick9.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick9.png)
+![defineStick9.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick9.png)
 
 You see now that the stick appears in the item-bar (1). Left click on the stick and then move the mouse in the white area and left-click on it (2). After that press the escape-key 
 to leave the editor from the AddItem-state and go back to the MoveSelect-state (3). The initial-position from the stick is at the moment the left key frame. We now want, that the 
 middle from the animation is used. To do so right-click on the stick from the item-bar (1) and then click on "Edit" (2).
 
-![defineStick10.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick10.png)
+![defineStick10.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick10.png)
 
 Select the AnimationEditor (1) and use 0.5 as starttime (2) for the animation. Click on "Go Back" (3).
-![defineStick11.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick11.png)
+![defineStick11.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick11.png)
 
 You can see the change in the item-bar (1). The stick starts now more in a straight position.
 
-![defineStick12.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick12.png)
+![defineStick12.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick12.png)
 
 We now want to create the ground. To do so we need to zoom out. Click on the magnifying glass (2) and you see now a little window at the right bottom corner (3). Click at 
 next on the auto-zoom-check-box (4) which will add a yellow rectangle to the small windows at the right bottom edge. 
 
-![defineStick13.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick13.png)
+![defineStick13.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick13.png)
 
 Place the mouse inside from the yellow rectange (1) and use the scroll-wheel for zooming out. Hold the left mouse button inside the yellow rectangle and move the mouse together with the rectangle 
 to change the camera-position. Click now on the "Add Polygon"-Button (2) and create the ground-polygon (3). After that click on the "Foreground"-Button (4) and select the stone.jpg-texture 
@@ -112,7 +112,7 @@ for the ground. For the background we want to use the sky.png-texture. Select th
 
 The editor looks now like this:
 
-![defineStick14.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick14.jpg)
+![defineStick14.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick14.jpg)
 
 We now want to define the keyboardmapping for the stick. Leftclick on the stick (1) and then click on "Keyboardmapping" (2) and on "Add Entry" (3). To move the animation backwards
 we want to use the up-key. So select this key in the combobox (4) and select in the combobox beside "Animation Backward 0". Click again on "Add Entry" (3) and use for the 
@@ -126,16 +126,16 @@ on position (3) to define the start-position and then on position (4). Click on 
 
 Do this also the other hill. Your editor looks now like this:
 
-![defineStick15.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick15.jpg)
+![defineStick15.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick15.jpg)
 
 We also want to add a stone-man standing on the right hill. To do so click on the "Physic Item"-Button (7).
 
-![defineStick16.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick16.png)
+![defineStick16.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick16.png)
 
 Click on "Add Polygon" (1) and define the man (2). The man should be a stone so it can not be moved (so easy). Click on "Edit Properties" (3) and then on the polygon (2) 
 and use Infinity (4) as masstype. This polygon will now stand fix on a position. Click on "Add Texture" (5).
 
-![defineStick17.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick17.jpg)
+![defineStick17.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick17.jpg)
 
 Select the TextureEditor (1) and then click on the polygon (2) and select the yellowMetal.jpg-image (3) for the polygon. We don't need a transpararent color (4). After that 
 go back to the main-editor (5). 
@@ -143,7 +143,7 @@ go back to the main-editor (5).
 Select the stone-man in the item-bar (1) and place it on the right hill (2). Left-click on of his green corner-points and move the mouse the scale the size from the man 
 a little bit down. You can now save the levelfile with the "Save"-Button (3) under the name "StickPlant.txt".
 
-![defineStick18.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick18.jpg)
+![defineStick18.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick18.jpg)
 
 ## Step 1.2 - Use the "StickPlant.txt"-File in code
 For this step: Open the JumpingStick-project from here: https://github.com/XMAMan/RigidBodyPhysicsExamples/tree/master/Source/PhysicExamples.sln
@@ -262,7 +262,7 @@ Yellow (TagColor=0) -> Groundpolygon
 Green (TagColor=1) -> Stick-Rectangles
 Blue (TagColor=2) -> Stone-Man-Polygon
 
-![defineStick19.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick19.png)
+![defineStick19.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick19.png)
 
 Save again the StickPlant.txt and go back to the viewmodel. We now add the logic for the collision-handling: 
 
@@ -304,7 +304,7 @@ which shows, that the Level1-object (our stick) is selected. Click on the parent
 man by clicking on the man (5) and then on Proto_2 or Body_7_0 (7) where you can add a tagName (8) with value "man". The same is done with the ground-polygon. Click on it (9),
 select Level_2 (10) and define the tagName "ground" (11). 
 
-![defineStick20.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick20.jpg)
+![defineStick20.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick20.jpg)
 
 There are now two ways to handle the collisions between two objects. Way 1 is using the tag color and way 2 is using the tag name.
 
@@ -347,7 +347,7 @@ If you now start the JumpingStick-project, then you will see, that the camera wi
 
 If you don't want to use the camera tracker then select again the strick-object and press the "Is Cameratracked"-Button to remove the green color from this button.
 
-![defineStick21.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineStick21.jpg)
+![defineStick21.jpg](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineStick21.jpg)
 
 # Exampleproject 2 - Gripper
 
@@ -362,20 +362,20 @@ Hold now the shift-key pressed to show the blue anchor-points and click on the l
 the shift-key and click at next on the top center point from the suspension-rectangle (7). The prismatic joint will now keep the anchorpoint from the suspension-rectangle 
 on the blue-line from the rail-rectangle. The prismatic joint is now visulisized with the blue line (8).
 
-![defineGripper0.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper0.png)
+![defineGripper0.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper0.png)
 
 At next we want to define how far left and right is the suspension-rectangle allowed to go. Click on "Edit Properties" (1) and then hold shift and click on the prismatic joint.
 Change the MaxTranslation-value (2) to 1. This is necessary otherwise because the max-point is outside the visible area of the screen and can't be moved by mouse. Click 
 on "Limit Joint" (3) and then again on the prismatic joint (4) and now move the min-point (5) to the right side from the rail-rectangle. The suspension can now move only 
 between the min- and max-point.
 
-![defineGripper1.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper1.png)
+![defineGripper1.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper1.png)
 
 The next step is to create five rectangles for the gripper. Use for this the "Add Rectangle"-Function (2). For the small rectangles (3) you can at first create a horizontal
 rectangle and then rotatate it with the "Move / Rotate"-Function (4) by using the mouse wheel. If you hold shift durring scrolling, then you rotate in bigger steps. This 
 is usefull, if you want to mirror the gripper-arms.
 
-![defineGripper2.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper2.png)
+![defineGripper2.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper2.png)
 
 We now need joints for the gripper. Click on "Add Weld Joint" (1) and then at rectangle C and after that on rectangle D. Move the mouse to a point, where both rectangles 
 overlapp and use this point to define for both rectangles the anchorpoint. The weld-joint will press the anchorpoints from the two rectangles together. 
@@ -389,40 +389,40 @@ anchorpoint in the bottom middle from rectangle A and in the top middle of recta
 "Joint is Rope"-checkbox (6). Otherwise the distance-joint will act like a stick, which can change his length. Click on "Limit Joint" (4) and then on the distance-joint and 
 move the max-point (7) below to define have far the gripper can move downwards. You see this number also in the edit-settings (8). 
 
-![defineGripper3.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper3.png)
+![defineGripper3.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper3.png)
 
 We need for the gripper also a little bit friction otherwise the gripper will swing to far to the left and right and it becomes hard to control. Click 
 on "Add AxialFriction" (1) and then on rectangle 2. Hold shift and place the anchorpoint at the center. Hold shift again and oriented the direction from 
 the friction-joint in horizontal direction. Click on "Edit Properties" (3) and use 0.0001 as friction value (4). This value was determined by trial and error.
 
-![defineGripper4.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper4.png)
+![defineGripper4.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper4.png)
 
 It is necessary that the rail-rectangle is a fixed object. Click on "Edit Properties" and then on the rail-rectangle to change the mass-type to infinity.
 
 After that we now want to define the movement from the gripper. Click on "Add Animation" (1), go to the AnimationEditor-tab (2) and then activate the HasGravity-checkbox (3).
 You see, that the rail-rectangle (4) has a red border. This indicates, that this rectangle has a infinity mass (not moveable). Click on Import (5) now.
 
-![defineGripper5.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper5.png)
+![defineGripper5.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper5.png)
 
 Right-click on the yellow area (1) to create a new key frame and then move this frame to the left by left-clicking it. Create a second key frame and move it to the right (2).
 Click on the first key frame and uncheck all checkboxes except the top one. This checkboxes indicates, which joints a controlled from this animation. Each joint can only be 
 controlled by one animation. Define for both keyframes that at animation start the gripper starts at left (3) and at animation end on the right side. Use a manually animation (4)
 and increase the durration from the animation to 3 seconds (5). 
 
-![defineGripper6.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper6.png)
+![defineGripper6.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper6.png)
 
 For the other joints we need a separat animation. Click again on "Add Animation" (1), open the second animation-tab (2) and then again on "HasGravity" and "Import".
 Add again two key frames (3) and activate the left key frame. Here we only want to animate the revolute joints. This two joints has the indizes 3 and 4. So only activate 
 the checkbox from this two joints (4) to tell, that this animation-tab will only affect this two joints. For the left key frame the gripper is open and for the right key 
 frame (5) the gripper is closed (6). We use again a manually animation-type (7). 
 
-![defineGripper7.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper7.png)
+![defineGripper7.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper7.png)
 
 The last animation will control the rope-length. Click on "Add Animation" (1), open the third animation (2), set "HasGravity" and click on "Import". Add two keyframes (3)
 and activate only the last checkbox (4) to tell, that this animation will only control the distance joint. At animation-start the gripper starts on top and at the end below.
 We need again the manually (5) animation and use a durration of 2 seconds (6).  
 
-![defineGripper8.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper8.png)
+![defineGripper8.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper8.png)
 
 We are now finish with the definition of the gripper. Click on "Go Back" (7).
 
@@ -434,34 +434,34 @@ with the mouse (2) and click on Keyboardmapping (3) and then on "Add Entry" (4) 
 
 You can now test the gripper by pressing on the simulation-button (7) and then press Q,A,W,S,E,D and see how the gripper is moving.
 
-![defineGripper9.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper9.png)
+![defineGripper9.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper9.png)
 
 
 We need at next a ground. The make the ground straight we activate the grid-mode (1) / (2) and add now a polygon (3) which looks like a rectangle (4).
-![defineGripper10.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper10.png)
+![defineGripper10.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper10.png)
 
 We now want some objects which can be used from the gripper. To do so click on "Physic Item" (5) and then active the grid mode also in the item editor (1) and create a 
 polygon (2), which looks like this in the image (3):
 
-![defineGripper11.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper11.png)
+![defineGripper11.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper11.png)
 
 The box apears now in the item-box (1) and if you place the box in the level (2) then you see that the size is very big. Select the box, hold shift and select the middle point (2)
 to define his pivot point. Now grap on of his corners (3) and move it to scale the box down. You see, that his size is changing (4). If you click "Transfer to Prototyp" (5) then 
 all new created boxes from the item-box will now have the small size.
-![defineGripper12.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper12.png)
+![defineGripper12.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper12.png)
 
 Place now two boxes (1) to build a stack (2) and (3).
 
-![defineGripper13.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper13.png)
+![defineGripper13.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper13.png)
 
 The second object should be a ball. Click on "Phyisc Item" (1) and then on "Add Circle" (2). Change the size with the scroll-wheel and place the circle in the item-editor (3).
 Click "Go Back" and then use the item (4) and place it in the level (5).
-![defineGripper14.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper14.png)
+![defineGripper14.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper14.png)
 
 The last object should be a star. Click on "Phyic Item" (1), then on "Add Polygon" (2), define the star (3), "GoBack", take the star from the item-box (4) and place it in the 
 level (5).
 
-![defineGripper15.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/main/Data/Tutorial/defineGripper15.png)
+![defineGripper15.png](https://raw.githubusercontent.com/XMAMan/RigidBodyPhysicsExamples/refs/heads/master/Data/Tutorial/defineGripper15.png)
 
 Save now the level as Gripper.txt.
 
