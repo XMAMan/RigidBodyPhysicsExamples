@@ -5,11 +5,15 @@ This project shows how to use the XMAMan.PhysicEngine-NuGet-Package.
 The XMAMan.PhysicEngine-NuGet-Package can be used for the simulation of 2D-rigid bodys. This means, if you want to simulate the movement from a car, bridge, skijumper or any other object that is somewhat solid,
 then this NuGet can you help. This package supports at the moment no fluid-physics or softbody-physics.
 
+There are two packages available:
+* XMAMan.PhysicEngine -> its only for the physics calculation
+* XMAMan.PhysicEngine.GrxExtension -> extends the physics engine with graphical output (intern OpenTK is used)
+
 This usecase are shown here:
 * Case 1: A stick which can jump
 	* shows how to create a object with multiple joints and how to move all joints with a single animation
 	* shows how to handle collision-events
-	* use XMAMan.GraphicEngine-NuGet for graphic output
+	* use XMAMan.PhysicEngine.GrxExtension-NuGet for graphic output
 * Case 2: A gripper
 	* shows how to use multipe animations for a single object
 	* shows how to use WPF for graphic output
