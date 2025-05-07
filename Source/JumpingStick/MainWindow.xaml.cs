@@ -16,9 +16,9 @@ namespace JumpingStick
             //Attention: The following must be added to the JumpingStick.csproj so that you can
             //use the DrawingPanel-object: <UseWindowsForms>true</UseWindowsForms>
             var panel = new DrawingPanel.DrawingPanel(100, 100);
-            this.graphicControlBorder.Child = new DrawingPanel.GraphicControl(panel); //The GraphicPanel2D-object is used by the view and viewmodel
+            this.graphicControlBorder.Child = new DrawingPanel.GraphicControl(panel); //The DrawingPanel-object is used by the view and viewmodel
 
-            this.DataContext = new ViewModel(panel); //the GraphicPanel2D-object is used by the viewmodel to send drawing commands
+            this.DataContext = new ViewModel(panel); //the DrawingPanel-object is used by the viewmodel to send drawing commands
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

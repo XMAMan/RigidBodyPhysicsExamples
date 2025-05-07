@@ -9,9 +9,9 @@ namespace JumpingStick
     {
         private const string DataFolder = @"..\..\..\..\..\Data\";
 
+        private GameSimulator simulator;                            //Comes from XMAMan.PhysicEngine (physic simulation)
         private IDrawingPanel panel;                                //Comes from XMAMan.PhysicEngine.GrxExtension (graphical output)        
 
-        private GameSimulator simulator;                            //Comes from XMAMan.PhysicEngine (physic simulation)
         private System.Windows.Threading.DispatcherTimer timer;
         private bool stickIsTouchingTheFigure = false;
 
