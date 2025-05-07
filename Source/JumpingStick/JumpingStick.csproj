@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="XMAMan.GraphicEngine" Version="0.0.2" />
-    <PackageReference Include="XMAMan.PhysicEngine" Version="0.0.1" />
+    <PackageReference Include="XMAMan.PhysicEngine" Version="0.0.2" />
+    <PackageReference Include="XMAMan.PhysicEngine.GrxExtension" Version="0.0.1" />
   </ItemGroup>
 
 </Project>

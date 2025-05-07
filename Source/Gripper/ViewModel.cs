@@ -1,7 +1,6 @@
-﻿using DynamicData;
-using GameHelper.Simulation;
+﻿using GameHelper.Simulation;
 using Gripper.Model;
-using RigidBodyPhysics.MathHelper;
+using PhysicGlobal;
 using RigidBodyPhysics.RuntimeObjects.Joints;
 using RigidBodyPhysics.RuntimeObjects.RigidBody;
 using System.Windows.Media;
@@ -73,7 +72,11 @@ namespace Gripper
                 float minX = physicPolygon.Vertex.Min(x => x.X);
                 float minY = physicPolygon.Vertex.Min(x => x.Y);
 
-                uiPolygon.Points.AddRange(physicPolygon.Vertex.Select(p => new System.Windows.Point(p.X - minX, p.Y - minY))); //Point (0,0) is the left top corner from the polygon
+                //Point (0,0) is the left top corner from the polygon
+                foreach (var point in physicPolygon.Vertex)
+                {
+                    uiPolygon.Points.Add(new System.Windows.Point(point.X - minX, point.Y - minY));
+                }
                 uiPolygon.Fill = System.Windows.Media.Brushes.Green;
                 uiPolygon.Stroke = System.Windows.Media.Brushes.Black;
 

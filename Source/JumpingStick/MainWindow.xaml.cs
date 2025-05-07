@@ -14,9 +14,9 @@ namespace JumpingStick
             InitializeComponent();
 
             //Attention: The following must be added to the JumpingStick.csproj so that you can
-            //use the GraphicPanel2D-object: <UseWindowsForms>true</UseWindowsForms>
-            var panel = new GraphicPanel2D() { Width = 100, Height = 100, Mode = Mode2D.OpenGL_Version_3_0 };
-            this.graphicControlBorder.Child = new GraphicControl(panel); //The GraphicPanel2D-object is used by the view and viewmodel
+            //use the DrawingPanel-object: <UseWindowsForms>true</UseWindowsForms>
+            var panel = new DrawingPanel.DrawingPanel(100, 100);
+            this.graphicControlBorder.Child = new DrawingPanel.GraphicControl(panel); //The GraphicPanel2D-object is used by the view and viewmodel
 
             this.DataContext = new ViewModel(panel); //the GraphicPanel2D-object is used by the viewmodel to send drawing commands
         }

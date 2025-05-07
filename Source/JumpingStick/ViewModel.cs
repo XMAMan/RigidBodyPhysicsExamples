@@ -1,7 +1,7 @@
 ﻿using GameHelper.Simulation;
-using GraphicPanels;
 using RigidBodyPhysics.CollisionDetection;
 using RigidBodyPhysics;
+using PhysicGlobal;
 
 namespace JumpingStick
 {
@@ -9,16 +9,16 @@ namespace JumpingStick
     {
         private const string DataFolder = @"..\..\..\..\..\Data\";
 
-        private GraphicPanel2D panel;                               //Comes from XMAMan.GraphicEngine (graphical output)        
+        private IDrawingPanel panel;                                //Comes from XMAMan.PhysicEngine.GrxExtension (graphical output)        
 
         private GameSimulator simulator;                            //Comes from XMAMan.PhysicEngine (physic simulation)
         private System.Windows.Threading.DispatcherTimer timer;
         private bool stickIsTouchingTheFigure = false;
 
-        public ViewModel(GraphicPanel2D panel)
+        public ViewModel(DrawingPanel.DrawingPanel panel)
         {
             this.panel = panel;
-            this.panel.SizeChanged += Panel_SizeChanged;
+            panel.SizeChanged += Panel_SizeChanged;
 
             this.timer = new System.Windows.Threading.DispatcherTimer();
             this.timer.Interval = new TimeSpan(0, 0, 0, 0, 30);//30 ms

@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="XMAMan.PhysicEngine" Version="0.0.1" />
+    <PackageReference Include="XMAMan.PhysicEngine" Version="0.0.2" />
   </ItemGroup>
 
 </Project>
