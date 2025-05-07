@@ -2,7 +2,7 @@
 
 This project shows how to use the XMAMan.PhysicEngine-NuGet-Package. 
 
-The XMAMan.PhysicEngine-NuGet-Package can be used for the simulation of 2D-rigid bodys. This means, of you want to simulate the movement from a car, bridge, skijumper or any other object that is somewhat solid,
+The XMAMan.PhysicEngine-NuGet-Package can be used for the simulation of 2D-rigid bodys. This means, if you want to simulate the movement from a car, bridge, skijumper or any other object that is somewhat solid,
 then this NuGet can you help. This package supports at the moment no fluid-physics or softbody-physics.
 
 This usecase are shown here:
