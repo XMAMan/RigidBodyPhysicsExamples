@@ -153,7 +153,7 @@ a little bit down. You can now save the levelfile with the "Save"-Button (3) und
 For this step: Open the JumpingStick-project from here: https://github.com/XMAMan/RigidBodyPhysicsExamples/tree/master/Source/PhysicExamples.sln
 
 This project was created by using a WPF.NET 8.0-projecttype and its using the nuget "XMAMan.PhysicEngine" for the physicsimulation. For the graphical output this project uses
-the "XMAMan.GraphicEngine"-nuget. Its also possible, that you use your own way for the graphic-output. The Gripper-project will show this.
+the "XMAMan.PhysicEngine.GrxExtension"-nuget. Its also possible, that you use your own way for the graphic-output. The Gripper-project will show this.
 
 To use the XMAMan.GraphicEngine you need to add a border-wpf-element in your MainWindow.xaml:
 
@@ -165,7 +165,7 @@ To use the XMAMan.GraphicEngine you need to add a border-wpf-element in your Mai
 </Window>
 ```
 
-and in the code-behind you create a GraphicPanel2D-object:
+and in the code-behind you create a DrawingPanel-object:
 
 ```csharp
 public partial class MainWindow : Window
@@ -174,12 +174,13 @@ public partial class MainWindow : Window
 	{
 		InitializeComponent();
 
-		//Attention: The following must be added to the JumpingStick.csproj so that you can
-		//use the GraphicPanel2D-object: <UseWindowsForms>true</UseWindowsForms>
-		var panel = new GraphicPanel2D() { Width = 100, Height = 100, Mode = Mode2D.OpenGL_Version_3_0 };
-		this.graphicControlBorder.Child = new GraphicControl(panel); //The GraphicPanel2D-object is used by the view and viewmodel
+		 //Attention: The following must be added to the JumpingStick.csproj so that you can
+ 		 //use the DrawingPanel-object: <UseWindowsForms>true</UseWindowsForms>
+		 var panel = new DrawingPanel.DrawingPanel(100, 100);
+		 this.graphicControlBorder.Child = new DrawingPanel.GraphicControl(panel); //The DrawingPanel-object is used by the view and viewmodel
+		
+		 this.DataContext = new ViewModel(panel); //the DrawingPanel-object is used by the viewmodel to send drawing commands
 
-		this.DataContext = new ViewModel(panel); //the GraphicPanel2D-object is used by the viewmodel to send drawing commands
 	}
 
 	private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -199,12 +200,12 @@ GraphicPanel2D-object for graphic output. If you run the wpf application with th
 ```csharp
 class ViewModel
 {
-	private GraphicPanel2D panel;                               //Comes from XMAMan.GraphicEngine (graphical output)        
-
 	private GameSimulator simulator;                            //Comes from XMAMan.PhysicEngine (physic simulation)
+	private IDrawingPanel panel;                                //Comes from XMAMan.PhysicEngine.GrxExtension (graphical output)        
+
 	private System.Windows.Threading.DispatcherTimer timer;
 	
-	public ViewModel(GraphicPanel2D panel)
+	public ViewModel(DrawingPanel.DrawingPanel panel)
 	{
 		this.panel = panel;
 		this.panel.SizeChanged += Panel_SizeChanged;
