@@ -237,8 +237,6 @@ class ViewModel
 	{
 		if (e.IsRepeat) return; //This prevents the handler from being called multiple times when the key is pressed
 
-		if (e.Key == System.Windows.Input.Key.P) simulationIsRunning = !simulationIsRunning;
-
 		this.simulator.HandleKeyDown(e.Key);
 	}
 
