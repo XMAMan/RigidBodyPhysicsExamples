@@ -23,12 +23,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 645.0,
                     "Y": 91.0
                   },
-                  "AngleInDegree": 0.0,
+                  "AngleInRad": 0.0,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -54,12 +55,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 349.0,
                     "Y": 184.0
                   },
-                  "AngleInDegree": 0.0,
+                  "AngleInRad": 0.0,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -85,12 +87,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 515.0,
                     "Y": 667.0
                   },
-                  "AngleInDegree": 48.0,
+                  "AngleInRad": 0.8377581,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -116,12 +119,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 201.0,
                     "Y": 667.0
                   },
-                  "AngleInDegree": -48.0,
+                  "AngleInRad": -0.8377581,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -147,12 +151,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 201.0,
                     "Y": 816.0
                   },
-                  "AngleInDegree": -132.0,
+                  "AngleInRad": -2.3038347,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -178,12 +183,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 519.0,
                     "Y": 814.0
                   },
-                  "AngleInDegree": 132.0,
+                  "AngleInRad": 2.3038347,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -209,12 +215,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 357.0,
                     "Y": 565.0
                   },
-                  "AngleInDegree": 0.0,
+                  "AngleInRad": 0.0,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -266,7 +273,9 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false,
+                  "MotorPosition": "NaN"
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.WeldJointExportData, RigidBodyPhysics",
@@ -292,7 +301,8 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.WeldJointExportData, RigidBodyPhysics",
@@ -318,7 +328,8 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.RevoluteJointExportData, RigidBodyPhysics",
@@ -350,7 +361,9 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false,
+                  "MotorPosition": "NaN"
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.RevoluteJointExportData, RigidBodyPhysics",
@@ -382,7 +395,9 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false,
+                  "MotorPosition": "NaN"
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.DistanceJointExportData, RigidBodyPhysics",
@@ -413,7 +428,9 @@
                   },
                   "BreakWhenMaxForceIsReached": false,
                   "MinForceToBreak": -1.0,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false,
+                  "LengthPosition": "NaN"
                 }
               ]
             },
@@ -441,7 +458,8 @@
                     "X": -1.0,
                     "Y": 0.0
                   },
-                  "Friction": 0.0001
+                  "Friction": 0.0001,
+                  "TargetVelocity": 0.0
                 }
               ]
             },
@@ -500,12 +518,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 645.0,
                     "Y": 91.0
                   },
-                  "AngleInDegree": 0.0,
+                  "AngleInRad": 0.0,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -531,12 +550,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 87.00135,
                     "Y": 183.00461
                   },
-                  "AngleInDegree": -0.00092240144,
+                  "AngleInRad": -1.6098942E-05,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -562,12 +582,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 278.787,
                     "Y": 379.3858
                   },
-                  "AngleInDegree": 8.453823,
+                  "AngleInRad": 0.14754705,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -593,12 +614,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": -98.87986,
                     "Y": 388.96002
                   },
-                  "AngleInDegree": -10.706128,
+                  "AngleInRad": -0.18685718,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -624,12 +646,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": -189.15398,
                     "Y": 507.4976
                   },
-                  "AngleInDegree": -94.70901,
+                  "AngleInRad": -1.652984,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -655,12 +678,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 375.46823,
                     "Y": 490.195
                   },
-                  "AngleInDegree": 92.45265,
+                  "AngleInRad": 1.6136032,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -686,12 +710,13 @@
                   },
                   "BreakWhenMaxPushPullForceIsReached": false,
                   "MaxPushPullForce": 1.0,
+                  "IsBroken": false,
                   "Center": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 87.67644,
                     "Y": 339.66534
                   },
-                  "AngleInDegree": -1.5409809,
+                  "AngleInRad": -0.026895192,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -743,7 +768,9 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false,
+                  "MotorPosition": "NaN"
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.WeldJointExportData, RigidBodyPhysics",
@@ -769,7 +796,8 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.WeldJointExportData, RigidBodyPhysics",
@@ -795,7 +823,8 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.RevoluteJointExportData, RigidBodyPhysics",
@@ -827,7 +856,9 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false,
+                  "MotorPosition": "NaN"
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.RevoluteJointExportData, RigidBodyPhysics",
@@ -859,7 +890,9 @@
                     "Damping": 0.1
                   },
                   "BreakWhenMaxForceIsReached": false,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false,
+                  "MotorPosition": "NaN"
                 },
                 {
                   "$type": "RigidBodyPhysics.ExportData.Joints.DistanceJointExportData, RigidBodyPhysics",
@@ -890,7 +923,9 @@
                   },
                   "BreakWhenMaxForceIsReached": false,
                   "MinForceToBreak": -1.0,
-                  "MaxForceToBreak": 1.0
+                  "MaxForceToBreak": 1.0,
+                  "IsBroken": false,
+                  "LengthPosition": "NaN"
                 }
               ]
             },
@@ -918,7 +953,8 @@
                     "X": -1.0,
                     "Y": 0.0
                   },
-                  "Friction": 0.0001
+                  "Friction": 0.0001,
+                  "TargetVelocity": 0.0
                 }
               ]
             },
@@ -1225,8 +1261,8 @@
             "LocalPivot": {
               "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
               "X": 0.0,
-              "Y": 0.0,
-			}
+              "Y": 0.0
+            }
           },
           "CameraTrackedRigidBodyIds": null
         },
@@ -1292,7 +1328,7 @@
                     "X": 400.0,
                     "Y": 349.99997
                   },
-                  "AngleInDegree": 0.0,
+                  "AngleInRad": 0.0,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -1378,8 +1414,8 @@
             "LocalPivot": {
               "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
               "X": 0.5,
-              "Y": 0.5,
-			}
+              "Y": 0.5
+            }
           },
           "CameraTrackedRigidBodyIds": null
         },
@@ -1400,7 +1436,7 @@
                     "X": 168.0,
                     "Y": 148.0
                   },
-                  "AngleInDegree": 0.0,
+                  "AngleInRad": 0.0,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -1486,8 +1522,8 @@
             "LocalPivot": {
               "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
               "X": 0.0,
-              "Y": 0.0,
-			}
+              "Y": 0.0
+            }
           },
           "CameraTrackedRigidBodyIds": null
         },
@@ -1563,7 +1599,7 @@
                     "X": 384.19998,
                     "Y": 287.8009
                   },
-                  "AngleInDegree": 0.0,
+                  "AngleInRad": 0.0,
                   "Velocity": {
                     "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
                     "X": 0.0,
@@ -1649,8 +1685,8 @@
             "LocalPivot": {
               "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
               "X": 0.0,
-              "Y": 0.0,
-			}
+              "Y": 0.0
+            }
           },
           "CameraTrackedRigidBodyIds": null
         }
@@ -1667,15 +1703,15 @@
         "Position": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 190.0,
-          "Y": 0.0,
-		},
+          "Y": 0.0
+        },
         "SizeFactor": 1.0,
         "AngleInDegree": 0.0,
         "LocalPivot": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 0.0,
-          "Y": 0.0,
-			}
+          "Y": 0.0
+        }
       },
       {
         "$type": "LevelEditorExports.Editor.LevelItems.PolygonLevelItemExportData, LevelEditorExports",
@@ -1686,30 +1722,22 @@
             {
               "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
               "X": 50.0,
-              "Y": 1050.0,
-              "Xi": 50,
-              "Yi": 1050
+              "Y": 1050.0
             },
             {
               "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
               "X": 2000.0,
-              "Y": 1050.0,
-              "Xi": 2000,
-              "Yi": 1050
+              "Y": 1050.0
             },
             {
               "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
               "X": 2000.0,
-              "Y": 950.0,
-              "Xi": 2000,
-              "Yi": 950
+              "Y": 950.0
             },
             {
               "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
               "X": 50.0,
-              "Y": 950.0,
-              "Xi": 50,
-              "Yi": 950
+              "Y": 950.0
             }
           ]
         },
@@ -1724,15 +1752,15 @@
         "Position": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 500.0,
-          "Y": 850.0,
-		},
+          "Y": 850.0
+        },
         "SizeFactor": 0.33607197,
         "AngleInDegree": 0.0,
         "LocalPivot": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 0.5,
-          "Y": 0.5,
-			}
+          "Y": 0.5
+        }
       },
       {
         "$type": "LevelEditorExports.Editor.LevelItems.PhysicLevelItemExportData, LevelEditorExports",
@@ -1741,15 +1769,15 @@
         "Position": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 476.0,
-          "Y": 650.0,
-		},
+          "Y": 650.0
+        },
         "SizeFactor": 0.33607197,
         "AngleInDegree": 0.0,
         "LocalPivot": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 0.5,
-          "Y": 0.5,
-			}
+          "Y": 0.5
+        }
       },
       {
         "$type": "LevelEditorExports.Editor.LevelItems.PhysicLevelItemExportData, LevelEditorExports",
@@ -1758,15 +1786,15 @@
         "Position": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 770.0,
-          "Y": 788.0,
-		},
+          "Y": 788.0
+        },
         "SizeFactor": 1.0,
         "AngleInDegree": 0.0,
         "LocalPivot": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 0.0,
-          "Y": 0.0,
-			}
+          "Y": 0.0
+        }
       },
       {
         "$type": "LevelEditorExports.Editor.LevelItems.PhysicLevelItemExportData, LevelEditorExports",
@@ -1775,15 +1803,15 @@
         "Position": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 1050.0,
-          "Y": 576.0,
-		},
+          "Y": 576.0
+        },
         "SizeFactor": 1.0,
         "AngleInDegree": 0.0,
         "LocalPivot": {
           "$type": "PhysicGlobal.Vec2D, PhysicGlobal",
           "X": 0.0,
-          "Y": 0.0,
-			}
+          "Y": 0.0
+        }
       }
     ]
   },
@@ -1807,32 +1835,32 @@
             {
               "$type": "LevelEditorExports.Editor.KeyboardMappings.KeyboardMappingEntry, LevelEditorExports",
               "Key": 60,
-              "HandlerId": 0
-            },
-            {
-              "$type": "LevelEditorExports.Editor.KeyboardMappings.KeyboardMappingEntry, LevelEditorExports",
-              "Key": 44,
               "HandlerId": 1
             },
             {
               "$type": "LevelEditorExports.Editor.KeyboardMappings.KeyboardMappingEntry, LevelEditorExports",
-              "Key": 66,
+              "Key": 44,
               "HandlerId": 2
             },
             {
               "$type": "LevelEditorExports.Editor.KeyboardMappings.KeyboardMappingEntry, LevelEditorExports",
-              "Key": 62,
+              "Key": 66,
               "HandlerId": 3
             },
             {
               "$type": "LevelEditorExports.Editor.KeyboardMappings.KeyboardMappingEntry, LevelEditorExports",
-              "Key": 48,
+              "Key": 62,
               "HandlerId": 4
             },
             {
               "$type": "LevelEditorExports.Editor.KeyboardMappings.KeyboardMappingEntry, LevelEditorExports",
-              "Key": 47,
+              "Key": 48,
               "HandlerId": 5
+            },
+            {
+              "$type": "LevelEditorExports.Editor.KeyboardMappings.KeyboardMappingEntry, LevelEditorExports",
+              "Key": 47,
+              "HandlerId": 6
             }
           ]
         }
